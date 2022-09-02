@@ -60,10 +60,10 @@
         echo 'Trama: ' . $movietwo->getplot() . '<br>' . '<br>';
 
         // Istanza di un terzo oggetto della classe movie
-        $movietwo = new movie('Natale a Miami', 'Commedia', 'Divertente');
-        echo 'Film: ' . $movietwo->getTitle() . '<br>';
-        echo 'Genere: ' . $movietwo->getgenre() . '<br>';
-        echo 'Trama: ' . $movietwo->getplot();
+        $moviethree = new movie('Natale a Miami', 'Commedia', 'Divertente');
+        echo 'Film: ' . $moviethree->getTitle() . '<br>';
+        echo 'Genere: ' . $moviethree->getgenre() . '<br>';
+        echo 'Trama: ' . $moviethree->getplot();
 
       ?>
     </h3>
