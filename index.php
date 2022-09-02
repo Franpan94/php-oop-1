@@ -12,20 +12,25 @@
     <h1>Film</h1>
     <h3>
       <?php
+
+        // Creazione della classe film
         class movie
-        {
+        {   
+            // Proprietà
             public $title;
             public $genre;
             public $plot;
 
-
+            // Costruttore
             function __construct($_title, $_genre, $_plot)
             {
-                $this->title = $_title;
+                // Inizializzazione delle variabili titolo, genere e trama
+                $this->title = $_title; 
                 $this->genre = $_genre;
                 $this->plot = $_plot;
             }
 
+            // Metodi
             public function getTitle()
             {
                 return $this->title;
@@ -42,11 +47,24 @@
             }
         }
 
-        $movieone = new movie('ciao', 'avventura', 'molto interessante');
+        // Istanza di un primo oggetto della classe movie
+        $movieone = new movie('Ciao ciao', 'Avventura', 'Molto interessante');
         echo 'Film: ' . $movieone->getTitle() . '<br>';
         echo 'Genere: ' . $movieone->getgenre() . '<br>';
-        echo 'Trama: ' . $movieone->getplot() . '<br>';
+        echo 'Trama: ' . $movieone->getplot() . '<br>' . '<br>';
         
+        // Istanza di un secondo oggetto della classe movie
+        $movietwo = new movie('Il più forte del mondo', 'Azione', 'Emozionante');
+        echo 'Film: ' . $movietwo->getTitle() . '<br>';
+        echo 'Genere: ' . $movietwo->getgenre() . '<br>';
+        echo 'Trama: ' . $movietwo->getplot() . '<br>' . '<br>';
+
+        // Istanza di un terzo oggetto della classe movie
+        $movietwo = new movie('Natale a Miami', 'Commedia', 'Divertente');
+        echo 'Film: ' . $movietwo->getTitle() . '<br>';
+        echo 'Genere: ' . $movietwo->getgenre() . '<br>';
+        echo 'Trama: ' . $movietwo->getplot();
+
       ?>
     </h3>
 </body>
